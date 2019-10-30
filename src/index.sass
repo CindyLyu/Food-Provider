@@ -1,0 +1,540 @@
+$orange_color: #f2711c
+$grey_color: #3c3c3c
+$red_error_color: #9f3a38
+$old_rose_color: #be7575
+$copper_rust_color: #9d4a4a
+$spring_wood_color: #f2eee5
+
+body 
+  margin: 0
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+// nav
+div.ui.container
+  div.item:first-child
+    font-weight: bold
+    font-size: 18px
+
+div.ui.secondary.nav
+  margin-top: 20px
+  div.container
+    div.item.nav__item
+      color: white
+      &:hover
+        color: white
+      a.nav__item-text
+        color: white
+        i
+          padding-right: 10px
+
+div.vertical.center
+  div.nav.general
+    margin-top: -14px
+
+a.nav__item-text
+  color: $grey_color
+
+.ui.secondary.pointing.menu .active.item
+  border-color: $orange_color
+  &:hover
+    border-color: $orange_color
+
+.ui.secondary.pointing.menu
+  border: none
+    
+a.ui.orange.nav__signin-text.basic
+  font-weight: bold
+
+div.ui.pointing.secondary.menu
+  a.item.nav__sidebar.button:active
+    border: none
+
+i.sidebar.nav__sidebar
+  color: black
+
+div.ui.large.menu
+  a.nav__sidebar
+    .nav__sidebar-icon
+      padding-top: 0px
+      padding-bottom: 23px
+
+div.nav__notsignin.item, div.nav__issignin.item
+  a.ui.button.nav__sign-up-text
+    margin-left: 10px
+
+a.ui.button.nav__sign-up-text
+  margin-left: 10px
+
+
+//message
+div.ui.message.message
+  position: absolute
+  z-index: 2
+  left: 50%
+  transform: translateX(-50%)
+  top: 100px
+  .content
+    padding: 0px 15px 0px 5px
+
+
+// home
+.header__mask
+  margin-top: -120px
+  height: 693px
+  background-image: url('./picture/head-bg.jpg')
+  background-size: cover
+
+.header__background-image
+  width: 100%
+  height: 100%
+
+.header__text
+  position: absolute
+  color: white
+  font-size: 40px
+  left: 140px
+  top: 260px
+  line-height: 70px
+  z-index: 1
+
+.header__text-comment
+  color: $orange_color
+  font-size: 20px
+  text-decoration: line-through
+  margin-left: 10px
+
+
+// signin、signup
+.signin
+  top: 0px
+
+div.signin__area, div.signup
+  position: absolute
+  left: 50%
+  top: 260px
+  transform: translateX(-50%)
+  text-align: center
+  .signin__title, .signup__title
+    color: $grey_color
+    font-size: 30px
+    margin-bottom: 30px
+    text-align: center
+    font-weight: 450
+  .signin__input-email, .signin__input-password, .signup__input-email, .signup__input-password
+    margin-bottom: 10px
+    min-width: 200px
+    [name='email']
+      margin-top: -10px
+  form.ui.form
+    .signin__input-email, .signup__input-email, .signup__input-password
+      margin-bottom: 10px
+  form.ui.form
+    .signup__input-passwordagain
+      margin-bottom: 10px
+      min-width: 200px
+
+.signin__input-submit, .signup__input-submit
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  .signup__input-error
+    color: $red_error_color
+    text-align: center
+    margin-bottom: 10px
+
+div.signin__area
+  top: 260px
+
+.signin__background-image, .signup__background-image
+  width: 100%
+  height: 693px
+  background-image: url('./picture/signin-bg.jpg')
+  background-size: cover
+  margin-top: -120px
+
+.signin__google
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  top: 160px
+  text-align: center
+
+div.ui.signin__horizontal
+  margin: 20px 0px
+
+
+// process
+.process
+  padding: 200px 100px
+  height: 500px
+  background-color: $spring_wood_color
+  position: relative
+  color: $copper_rust_color
+
+.process__content
+  position: absolute
+  top: 45%
+  left: 50%
+  transform: translateX(-50%) translateY(-50%)
+  font-size: 20px
+
+.process__content-title
+  margin-bottom: 50px
+  text-align: center
+  font-size: 30px
+
+.process__content-body
+  display: flex
+  padding-top: 20px
+
+.process__content-body-step
+  text-align: center
+  padding: 20px
+  min-width: 300px
+  display: inline-block
+  line-height: 30px
+
+i.large.icon
+  margin-bottom: 35px
+
+i.process__content-body-arrow
+  margin-top: 50px
+  color: #ada78a
+
+
+// plans
+.plans
+  padding: 200px 100px
+  height: 500px
+  position: relative
+  color: white
+  background-image: url('./picture/plans-bg.jpg')
+  background-position: center center
+  background-size: cover
+  line-height: 25px
+
+.plans__content
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translateX(-50%) translateY(-50%)
+  font-size: 20px
+  width: 1000px
+
+.plans__content-title
+  text-align: center
+  font-size: 30px
+  margin-bottom: 50px
+
+.plans__content-body
+  display: flex
+  justify-content: center
+
+.plans__content-body-description
+  padding-top: 20px
+  font-size: 18px
+
+
+// order
+.order
+  padding: 20px 150px
+  color: $grey_color
+  line-height: 30px
+
+div.grouped.fields
+  div.field.hidden.order__content-textarea
+    display: none
+
+.order__step
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  width: 800px
+
+.order__content
+  margin-top: 120px
+  margin-bottom: 20px
+  div.ui.horizontal
+    padding: 20px 0px
+    h4.order__content-horizontal
+      color: $old_rose_color
+
+.completed
+  text-align: center
+  i
+    margin-bottom: 20px
+
+.order__content-shippingcycle, .order__content-shippingtime, .order__content-number, .order__content-type, .order__content-price, .order__content-message
+  font-weight: 700
+
+.order__content-shippingtime, .order__content-shippingcycle
+  display: flex
+  align-items: center
+  .order__content-shippingtime-text, .order__content-shippingcycle-text
+    margin-right: 10px
+    font-size: .92857143em
+
+.order__content-message
+  margin-bottom: 10px
+  font-size: .92857143em
+  color: $old_rose_color
+
+.order__content-shippingcycle
+  padding: 0px 5px
+  display: flex
+  white-space: nowrap
+  margin-top: 20px
+
+.order__content-shippingcycle
+  select:focus
+    outline: none
+
+.order__content-notToEat-item, .order__content-wantToEat-item
+  cursor: pointer
+  .checkbox
+    margin: 0px 5px
+
+button.order__content-cancel.ui, button.order__content-back.ui
+  margin-top: 20px
+
+.order__content-shippingtime-error
+  color: $old_rose_color
+  margin-left: 10px
+
+div
+  input.order__content-shippingtime-datepicker:focus
+    background-color: red
+  input[name='shippingTime'].order__content-shippingtime-datepicker.error
+    background-color: #fff6f6
+    color: #9f3a38
+    border-color: #e0b4b4
+
+.order__content-warning
+  font-weight: bold
+  color: $red_error_color
+
+div
+  div.order__content.completed.ui
+    margin-top: 90px
+    padding: 150px 50px
+
+
+// 404
+div.nomatch.segment
+  top: -8px
+  left: 50%
+  height: 75vh
+  display: inline-block
+  width: 1100px
+  transform: translateX(-50%)
+  div.ui.icon
+    i.icon
+      margin-bottom: 20px
+    br
+      margin-bottom: 20px
+
+
+// records
+.records
+  height: 100%
+  white-space: normal
+  margin: 20px 0px
+  color: $grey_color
+  table.ui.single.line
+    max-width: 1412px
+
+.records__title
+  font-size: 28px
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+
+.records__orders
+  padding: 70px 250px
+  &.ui.table
+    border: none
+
+.records__orders-body
+  div
+    white-space: normal
+
+.records__pagination
+  text-align: center
+  padding-bottom: 20px
+  .ui.pagination.menu
+    a:focus
+      outline: none
+
+
+// footer
+div.footer.ui.segment
+  position: relative
+
+.footer__body
+  display: flex
+  font-size: 15px
+  font-weight: 500
+  text-align: center
+
+
+// loading
+div.ui.active.dimmer
+  position: fixed
+
+
+@media screen and (max-width: 1308px)
+  .process__content-body-step
+    min-width: 200px
+
+  .process__content-title
+    font-size: 25px
+
+  .process__content
+    font-size: 18px
+
+@media screen and (max-width: 1000px)
+  .header__text
+    margin-top: 80px
+    left: 50%
+    transform: translateX(-50%)
+    top: 150px
+
+  .plans__content
+    width: initial
+
+  .plans__content-body
+    flex-direction: column
+
+  .plans
+    height: 1200px
+
+  .records__orders
+    padding: 70px 150px
+
+  .order
+    padding: 20px 100px
+
+@media screen and (max-width: 910px)
+  .process__content-body-step
+    min-width: 150px
+
+  .process__content-title
+    font-size: 22px
+
+  .process__content
+    font-size: 16px
+
+  .records__orders
+    padding: 70px 100px
+
+  .order
+    padding: 20px 90px
+
+@media screen and (max-width: 770px)
+  .signin
+    color: black
+    position: initial
+
+  .signin__background-image, .signup__background-image
+    background-repeat: no-repeat
+    background-position: 20% -40%
+    height: 490px
+    margin-top: -91px
+
+  .signin__google
+    top: 110px
+ 
+  div.signin__area, div.signup
+    position: absolute
+    left: 50%
+    top: 200px
+    transform: translateX(-50%)
+
+  div.signin
+    .signin__google
+      top: 150px
+
+  div.signin__area
+    top: 240px
+
+  .process
+    height: 600px
+
+  .process__content-body
+    display: initial
+    flex-direction: column
+    align-items: center
+
+  .process__content
+    font-size: 16px
+    margin: 30px 0px
+
+  .process__content-body-step
+    vertical-align: middle
+    &:first-child
+      white-space: nowrap
+
+  .process__content-title
+    font-size: 22px
+    margin-bottom: 50px
+  i.large.icon.process__content-body-arrow
+    margin: 5px 44%
+
+  i.large.icon
+    margin: 10px
+
+  div
+    div.order__content.completed.ui
+      margin-top: 390px
+
+@media screen and (max-width: 767px)
+  .order__content
+    margin-top: 400px
+
+  .order
+    padding: 20px 50px
+
+  div.ui.active.dimmer
+    div.ui.text.loader
+      top: 50vh
+      
+  .records__title
+    position: relative
+    text-align: center
+    padding: 20px 0px
+
+  tr.records__orders-body
+    td.left.aligned
+      div.ui
+        font-weight: initial
+
+  .records__orders-number
+    font-weight: initial
+
+  .signin__background-image, .signup__background-image
+    background-position: 15% 50%
+    height: 500px
+
+@media screen and (max-width: 720px)
+  .header__mask
+    margin-top: -250px
+    background-position: center
+
+  .header__text
+    top: 100px
+    font-size: 35px
+    text-align: center
+  .header__text-comment
+    display: none
+
+@media screen and (max-width: 650px)
+  .header__text
+    font-size: 30px
+    top: 80px
+    line-height: 50px
+    white-space: nowrap
+
+@media screen and (max-width: 375px)
+  .signin__background-image, .signup__background-image
+    height: 500px
