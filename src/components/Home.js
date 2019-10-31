@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react';
+import React, { Component, useEffect, Fragment } from 'react';
 import { useLocation } from 'react-router-dom';
 import {
   Icon,
@@ -164,7 +164,7 @@ class Home extends Component {
   render() {
     const { messageDisplay, messageText, messageType } = this.state;
     return (
-      <>
+      <Fragment>
         <ScrollToTop />
         {messageDisplay
           && (
@@ -285,7 +285,7 @@ class Home extends Component {
           return null;
         }}
         />
-      </>
+      </Fragment>
     );
   }
 }

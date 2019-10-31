@@ -250,7 +250,7 @@ class MobileNav extends Component {
               onClick={this.handleItemClick}
               active={activeItem === 'Food Provider'}
             >
-Food Provider
+              Food Provider
             </Menu.Item>
           </Link>
           <Link to='/#process'>
@@ -259,7 +259,7 @@ Food Provider
               onClick={this.handleItemClick}
               active={activeItem === '服務流程'}
             >
-服務流程
+              服務流程
             </Menu.Item>
           </Link>
           <Link smooth to='/#plans'>
@@ -268,7 +268,7 @@ Food Provider
               onClick={this.handleItemClick}
               active={activeItem === '選購方案'}
             >
-選購方案
+              選購方案
             </Menu.Item>
           </Link>
           {!isSignIn
@@ -279,7 +279,7 @@ Food Provider
                 onClick={this.handleItemClick}
                 active={activeItem === '登入'}
               >
-登入
+                登入
               </Menu.Item>
             </Link>
             )}
@@ -291,7 +291,7 @@ Food Provider
                 onClick={this.handleItemClick}
                 active={activeItem === '登出'}
               >
-登出
+                登出
               </Menu.Item>
             </Link>
             )}

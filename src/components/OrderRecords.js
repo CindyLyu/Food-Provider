@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react';
+import React, { Component, useEffect, Fragment } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../index.sass';
 import {
@@ -102,7 +102,6 @@ class OrderRecords extends Component {
     const page = e.target.innerText;
     const { activePage, originalData } = this.state;
     const maxPage = Math.ceil(originalData.length / 5);
-    // console.log(maxPage)
     if (type === 'nextItem' && activePage <= maxPage) {
       this.setState({
         activePage: Number(activePage) + 1,
@@ -134,7 +133,7 @@ class OrderRecords extends Component {
       title: '配送資訊',
       content: {
         content: (
-          <>
+          <Fragment>
             <div>
               配送起始日期及時間：{shippingTime}
             </div>
@@ -157,7 +156,7 @@ class OrderRecords extends Component {
             <div>
               喜歡吃的食物：{wantToEat}（其他：{wantToEatOther})
             </div>
-          </>
+          </Fragment>
         ),
       },
     },
@@ -178,7 +177,7 @@ class OrderRecords extends Component {
           )}
         <div className='records__title'>
           <Icon name='clipboard list' />
-訂單記錄
+          訂單記錄
         </div>
         <Table singleLine className='records__orders' textAlign={responsive === 'tablet' ? 'center' : 'left'}>
           <Table.Header>
@@ -201,7 +200,7 @@ class OrderRecords extends Component {
             </Table.Row>
             )}
             {data && data.map(item => (
-              <>
+              <Fragment>
                 <Table.Row>
                   <Table.Cell className='records__orders-number'>
                     {responsive === 'mobile' && '訂單編號：'}
@@ -227,22 +226,21 @@ class OrderRecords extends Component {
                 <Table.Row positive className='records__orders-body'>
                   <Table.Cell colSpan='6' textAlign='left'>
                     <Accordion panels={
-                    this.panels(
-                      item.shippingTime,
-                      item.shippingCycle,
-                      item.recipient,
-                      item.address,
-                      item.phone,
-                      foodInfoArrayToString(item.notToEat),
-                      item.notToEatOther,
-                      foodInfoArrayToString(item.wantToEat),
-                      item.wantToEatOther,
-                    )
-                  }
+                      this.panels(
+                        item.shippingTime,
+                        item.shippingCycle,
+                        item.recipient,
+                        item.address,
+                        item.phone,
+                        foodInfoArrayToString(item.notToEat),
+                        item.notToEatOther,
+                        foodInfoArrayToString(item.wantToEat),
+                        item.wantToEatOther,
+                      )}
                     />
                   </Table.Cell>
                 </Table.Row>
-              </>
+              </Fragment>
             ))}
           </Table.Body>
         </Table>

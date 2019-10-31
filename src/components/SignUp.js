@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import {
   Button,
   Form,
@@ -134,7 +134,7 @@ class SignUp extends Component {
       messageType,
     } = this.state;
     return (
-      <>
+      <Fragment>
         {messageDisplay
           && (
           <MessageNotify
@@ -184,7 +184,7 @@ class SignUp extends Component {
             </Button>
           </Form>
         </div>
-      </>
+      </Fragment>
     );
   }
 }

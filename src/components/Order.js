@@ -379,15 +379,15 @@ class Order extends Component {
           <div className='order__content'>
             <ScrollToTop />
             <div className='order__content-number'>
-訂單編號：
+              訂單編號：
               {orderNumber}
             </div>
             <div className='order__content-type'>
-方案：
+              方案：
               {orderType}
             </div>
             <div className='order__content-price'>
-價格：
+              價格：
               {numberWithCommas(orderPrice)}
             </div>
             <Divider horizontal>
@@ -540,15 +540,15 @@ class Order extends Component {
              <ScrollToTop />
              <div className='order__content-warning'>請確認以下資訊無誤，再執行付款</div>
              <div>
-訂單編號：
+                訂單編號：
                {orderNumber}
              </div>
              <div>
-方案：
+                方案：
                {orderType}
              </div>
              <div>
-價格：
+                價格：
                {numberWithCommas(orderPrice)}
              </div>
              <Divider horizontal>
@@ -558,7 +558,7 @@ class Order extends Component {
                </Header>
              </Divider>
              <div>
-配送起始日期及時間：
+                配送起始日期及時間：
                {shippingTime.toString()}
              </div>
              <div>
@@ -570,15 +570,15 @@ class Order extends Component {
                }
              </div>
              <div>
-收件者：
+                收件者：
                {recipient}
              </div>
              <div>
-地址：
+                地址：
                {address}
              </div>
              <div>
-聯絡電話：
+                聯絡電話：
                {phone}
              </div>
              <Divider horizontal>
@@ -591,14 +591,14 @@ class Order extends Component {
                不吃的食物：
                {foodInfoArrayToString(notToEat)}
                <br />
-其他：
+                其他：
                {notToEatOther}
              </div>
              <div>
                喜歡吃的食物：
                {foodInfoArrayToString(wantToEat)}
                <br />
-其他：
+                其他：
                {wantToEatOther}
              </div>
              <Button onClick={this.handlePrevStep} className='order__content-back' secondary>回上一步</Button>
