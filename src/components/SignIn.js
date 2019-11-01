@@ -57,14 +57,13 @@ class SignIn extends Component {
       });
   }
 
-  handleInputChange = (e) => {
+  handleInputChange = e => {
     const { value, name } = e.target;
     this.setState({
       [name]: value,
     });
   }
 
-  // 與 SignUp 重複都有用到
   handleEmailValid = () => {
     const { email } = this.state;
     this.setState({
@@ -72,7 +71,7 @@ class SignIn extends Component {
     });
   }
 
-  handleMessageDisplay = (data) => {
+  handleMessageDisplay = data => {
     this.setState({
       messageDisplay: data.message,
     });

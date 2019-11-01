@@ -41,7 +41,7 @@ class SignUp extends Component {
     }
   }
 
-  handleInputChange = (e) => {
+  handleInputChange = e => {
     const { name, value } = e.target;
     this.setState({
       [name]: value,

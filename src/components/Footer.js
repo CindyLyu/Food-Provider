@@ -14,7 +14,9 @@ class Footer extends PureComponent {
         <Container className='footer__body'>
           <Icon name='food' />
           Food Provider（ Cindy Lyu 練習作品
-          <Icon className='footer__github' name="github" />
+          <a target='_blank' href='https://github.com/CindyLyu/Food-Provider'>
+            <Icon className='footer__github' name="github" />
+          </a>
           ）
         </Container>
       </Segment>

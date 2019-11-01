@@ -55,7 +55,7 @@ class DesktopNav extends Component {
 
   showFixedMenu = () => this.setState({ fixed: true })
 
-  handleItemClick = (e) => {
+  handleItemClick = e => {
     const { changeActiveItem } = this.props;
     const item = e.target.innerText;
     changeActiveItem(item);
@@ -214,7 +214,7 @@ class MobileNav extends Component {
 
   handleToggle = () => this.setState({ sidebarOpened: true })
 
-  handleItemClick = (e) => {
+  handleItemClick = e => {
     const { changeActiveItem } = this.props;
     const item = e.target.innerText;
     changeActiveItem(item);

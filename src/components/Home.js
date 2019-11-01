@@ -155,7 +155,7 @@ class Home extends Component {
     }
   }
 
-  handleMessageDisplay = (data) => {
+  handleMessageDisplay = data => {
     this.setState({
       messageDisplay: data.message,
     });
