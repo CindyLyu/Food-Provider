@@ -69,8 +69,7 @@ class GoogleAuth extends Component {
       <div className='signin__google'>
         <Button className='signin__google-button' onClick={this.handleGoogleSignUp} color='google plus'>
           <Icon name='google' />
-           使用 Google
-          {type}
+           使用 Google {type}
         </Button>
         <Divider className='signin__horizontal' horizontal>Or</Divider>
       </div>
